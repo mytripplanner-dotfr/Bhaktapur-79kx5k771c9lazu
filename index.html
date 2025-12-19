@@ -1,0 +1,610 @@
+
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhaktapur, Joyau Népalaise : Immersion Culturelle et Spirituelle </title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <script>
+      tailwind.config = {
+          theme: {
+              extend: {
+                  colors: {
+                      template: {
+                          sable: '#FFEDD5', 
+                          ocre: '#F97316',   // Orange Vibrant (Brand Accent)
+                          roche: '#0F172A',  // Bleu Nuit (Brand Dark)
+                          ciel: '#0D9488',   // Vert Lagon (Brand Primary)
+                          bg: '#FFF7ED'      // C'est un blanc cassé chaud, parfait pour la lecture et le contraste.
+                      }
+                  },
+                  fontFamily: {
+                      sans: ['"Plus Jakarta Sans"', 'sans-serif'], // Nouvelle police corps
+                      serif: ['"Outfit"', 'sans-serif'],           // Nouvelle police titres
+                  }
+              }
+          }
+      }
+    </script>
+    <style>
+        body { overflow-x: hidden; }
+        
+        /* 2. FORÇAGE DES GRAISSES (Comme sur la Landing Page) */
+        .font-sans { font-weight: 600 !important; }
+        .font-serif { font-weight: 800 !important; }
+
+        /* Ligne verticale de la timeline */
+        .timeline-line {
+            position: absolute;
+            left: 24px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background-color: #E5E7EB;
+            z-index: 0;
+        }
+
+        @media (min-width: 768px) {
+            .timeline-line { left: 50%; margin-left: -1px; }
+        }
+
+        /* Style des cartes Info */
+        .tip-card {
+            border-left: 4px solid #F97316; /* ocre */
+            background-color: #FFF7ED;
+        }
+
+        /* Masquer la scrollbar de la nav mobile tout en gardant le scroll */
+        .hide-scroll::-webkit-scrollbar { display: none; }
+        .hide-scroll { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-template-bg text-template-roche antialiased">
+    
+    <nav id="nav-desktop" class="hidden md:flex fixed top-0 w-full z-50 bg-white/90 backdrop-blur border-b border-gray-200 py-4 px-8 justify-between items-center shadow-sm transition-transform duration-300 -translate-y-full">
+        <a href="#top" class="text-xl font-serif font-bold tracking-widest text-template-roche">MyTrip<span class="text-template-ocre">Planner</span></a>
+        <div class="space-x-6 text-sm font-bold text-gray-600">
+            <a href="#jour-1" class="nav-item-desktop hover:text-template-ocre transition">Le Parcours</a>
+            <a href="#pratique" class="nav-item-desktop hover:text-template-ocre transition">Infos Pratiques</a>
+        </div>
+    </nav>
+
+    <nav id="nav-mobile" class="md:hidden fixed top-0 w-full z-50 bg-white/95 backdrop-blur border-b border-gray-200 py-3 pl-4 overflow-x-auto hide-scroll whitespace-nowrap shadow-md transition-transform duration-300 -translate-y-full">
+        <div class="flex space-x-2 pr-4" id="mobile-menu-container">
+            <a href="#top" class="inline-block px-3 py-1 bg-template-roche text-white rounded-full text-xs font-bold shadow-sm">Top</a>
+            
+                <a href="#jour-1" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J1 Arrivée à Bhaktapur, première immersion</a>
+            
+                <a href="#jour-2" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J2 Bhaktapur : Cœur historique et artisanat</a>
+            
+                <a href="#jour-3" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J3 Changu Narayan et vie rurale</a>
+            
+                <a href="#jour-4" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J4 Patan, la ville de la beauté</a>
+            
+                <a href="#jour-5" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J5 Katmandou : Durbar Square et Thamel</a>
+            
+                <a href="#jour-6" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J6 Katmandou : Stupas sacrés</a>
+            
+                <a href="#jour-7" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J7 Lever de soleil à Nagarkot et randonnée</a>
+            
+                <a href="#jour-8" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J8 Bhaktapur : Trésors cachés et architecture</a>
+            
+                <a href="#jour-9" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J9 Immersion culturelle : Cuisine ou artisanat</a>
+            
+                <a href="#jour-10" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J10 Panauti ou Dhulikhel : Villes historiques</a>
+            
+                <a href="#jour-11" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J11 Journée libre et détente à Bhaktapur</a>
+            
+                <a href="#jour-12" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J12 Siddha Pokhari et marché local</a>
+            
+                <a href="#jour-13" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J13 Derniers instants à Bhaktapur</a>
+            
+                <a href="#jour-14" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J14 Départ de Katmandou</a>
+            
+            <a href="#pratique" class="mobile-link inline-block px-3 py-1 border border-gray-300 text-gray-500 rounded-full text-xs font-bold">Infos</a>
+        </div>
+    </nav>
+
+    <header id="top" class="relative h-[60vh] flex items-center justify-center bg-cover bg-center"
+            style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('https://raw.githubusercontent.com/mytripplanner-dotfr/Bhaktapur-79kx5k771c9lazu/main/header.png" || 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=2021'}');">
+        
+        <div class="relative z-20 text-center text-white px-4 max-w-3xl animate-fade-in-up">
+            <p class="font-sans text-template-sable tracking-[0.2em] mb-4 uppercase text-xs font-bold">Feuille de Route</p>
+            <h1 class="font-serif text-5xl md:text-8xl mb-6 leading-tight drop-shadow-lg">BHAKTAPUR</h1>
+            <p class="font-sans text-lg md:text-xl text-gray-100 mb-10 font-medium max-w-2xl mx-auto leading-relaxed">Bhaktapur, Joyau Népalaise : Immersion Culturelle et Spirituelle</p>
+            
+            <div class="flex flex-wrap justify-center gap-4 text-sm font-bold mb-10">
+                <span class="bg-white/20 backdrop-blur-md px-5 py-2 rounded-full border border-white/30 shadow-sm">🗓️ Du 31 Décembre 2025 au 14 Janvier 2026</span>
+                <span class="bg-white/20 backdrop-blur-md px-5 py-2 rounded-full border border-white/30 shadow-sm">💰 2310 € (Vol + estimations)</span>
+                <span class="bg-white/20 backdrop-blur-md px-5 py-2 rounded-full border border-white/30 shadow-sm">🛬 13h40 - 1 escales</span>
+            </div>
+        </div>
+    </header>
+
+    <section id="itineraire" class="max-w-6xl mx-auto px-4 py-16 relative">
+      <div class="text-center mb-16">
+            <h2 class="text-template-ocre font-bold tracking-normal text-4xl mt-2 uppercase font-serif">Votre Roadtrip</h2>
+      </div>
+
+        <div class="relative">
+            <div class="timeline-line"></div>
+            
+                <div id="jour-1" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 1</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Arrivée à Bhaktapur, première immersion</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Après un long vol, vous atterrissez à Katmandou. Un transfert vous mènera directement à Bhaktapur, votre havre de paix pour ce séjour. Prenez le temps de vous installer à votre hôtel et de vous imprégner de l'atmosphère unique de cette ville médiévale. Une première balade en soirée vous donnera un aperçu de sa magie.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🛬 <strong>Arrivée à Katmandou :</strong> Transfert vers Bhaktapur en taxi ou bus local.</li><li>🛏️ <strong>Installation :</strong> Check-in à l'hôtel et repos bien mérité.</li><li>🚶‍♂️ <strong>Première immersion :</strong> Balade nocturne autour de Durbar Square illuminée.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Bhaktapur-79kx5k771c9lazu/main/jour1.jpg" class="w-full h-64 object-cover" alt="Jour 1">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">ℹ️ À savoir</p>
+                                <p class="text-gray-700">Bhaktapur est une ville piétonne dans son centre historique, ce qui rend la découverte à pied très agréable. Prévoyez des chaussures confortables.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-2" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 2</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Bhaktapur : Cœur historique et artisanat</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Débutez votre exploration par le cœur historique de Bhaktapur, la place Durbar Square, classée à l'UNESCO. Admirez l'architecture Newar, les temples et les palais. Poursuivez vers Taumadhi Square et la célèbre place de la Poterie, où les artisans travaillent l'argile à ciel ouvert. Une journée riche en découvertes culturelles.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🏛️ <strong>Durbar Square :</strong> Explorez les temples et palais de cette place historique.</li><li>🏺 <strong>Place de la Poterie :</strong> Observez les artisans potiers à l'œuvre et leurs créations.</li><li>🙏 <strong>Taumadhi Square :</strong> Admirez le temple de Nyatapola, la plus haute pagode du Népal.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Bhaktapur-79kx5k771c9lazu/main/jour2.jpg" class="w-full h-64 object-cover" alt="Jour 2">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">💡 Conseil local</p>
+                                <p class="text-gray-700">Goûtez au 'Juju Dhau', le yaourt royal de Bhaktapur, une spécialité crémeuse servie dans des bols en terre cuite. Un délice rafraîchissant !</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-3" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ciel rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 3</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Changu Narayan et vie rurale</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Aujourd'hui, échappez à l'agitation urbaine pour une immersion dans la campagne népalaise. Visitez le temple de Changu Narayan, le plus ancien temple hindou de la vallée de Katmandou, également classé à l'UNESCO. Profitez d'une agréable promenade à travers les villages traditionnels environnants, découvrant la vie rurale.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🕉️ <strong>Temple de Changu Narayan :</strong> Découvrez ce site sacré et son architecture ancienne.</li><li>🚶‍♀️ <strong>Randonnée villageoise :</strong> Promenez-vous dans les villages Newar environnants.</li><li>🏞️ <strong>Vues panoramiques :</strong> Profitez des paysages verdoyants de la vallée.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Bhaktapur-79kx5k771c9lazu/main/jour3.jpg" class="w-full h-64 object-cover" alt="Jour 3">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🚌 Transport</p>
+                                <p class="text-gray-700">Des bus locaux ou des taxis sont disponibles pour se rendre à Changu Narayan depuis Bhaktapur. Le trajet offre déjà de belles vues sur la campagne.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-4" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 4</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Patan, la ville de la beauté</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Partez pour une excursion d'une journée à Patan, la 'ville de la beauté', réputée pour son art et son artisanat. Sa Durbar Square est un chef-d'œuvre architectural, abritant des temples, des palais et des musées. Ne manquez pas le Temple d'Or et les ruelles animées, témoins d'un riche passé artistique.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🏛️ <strong>Patan Durbar Square :</strong> Admirez l'incroyable concentration de temples et palais.</li><li>✨ <strong>Temple d'Or (Hiranya Varna Mahavihar) :</strong> Explorez ce monastère bouddhiste scintillant.</li><li>🎨 <strong>Musée de Patan :</strong> Plongez dans l'histoire de l'art sacré népalais.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Bhaktapur-79kx5k771c9lazu/main/jour4.jpg" class="w-full h-64 object-cover" alt="Jour 4">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🛍️ Artisanat</p>
+                                <p class="text-gray-700">Patan est réputée pour ses artisans du métal et du bois. N'hésitez pas à visiter les ateliers pour observer leur travail et trouver des souvenirs uniques.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-5" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 5</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Katmandou : Durbar Square et Thamel</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Direction Katmandou, la capitale trépidante. Commencez par sa Durbar Square, un autre site UNESCO, où l'histoire et la vie quotidienne se rencontrent. Flânez ensuite dans le quartier animé de Thamel, idéal pour le shopping et l'ambiance cosmopolite. Une journée contrastée entre patrimoine et modernité.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🏛️ <strong>Kathmandu Durbar Square :</strong> Visitez l'ancien palais royal et les temples environnants.</li><li>🛍️ <strong>Exploration de Thamel :</strong> Découvrez ce quartier vibrant, ses boutiques et restaurants.</li><li>🚶‍♂️ <strong>Kumari Ghar :</strong> Tentez d'apercevoir la Déesse Vivante Kumari.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Bhaktapur-79kx5k771c9lazu/main/jour5.jpg" class="w-full h-64 object-cover" alt="Jour 5">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🚦 Circulation</p>
+                                <p class="text-gray-700">La circulation à Katmandou peut être dense et bruyante. Prévoyez des temps de trajet plus longs et soyez vigilant en traversant les rues.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-6" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ciel rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 6</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Katmandou : Stupas sacrés</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Poursuivez votre découverte spirituelle de Katmandou avec deux sites emblématiques. Le stupa de Swayambhunath, le 'Temple des Singes', offre une vue imprenable sur la vallée. Ensuite, visitez Boudhanath, l'un des plus grands stupas bouddhistes du monde, centre de pèlerinage et de méditation. Deux lieux empreints de sérénité.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🐒 <strong>Swayambhunath (Temple des Singes) :</strong> Montez les marches pour une vue panoramique.</li><li>☸️ <strong>Boudhanath Stupa :</strong> Faites le tour du stupa avec les pèlerins et les moines.</li><li>🧘‍♀️ <strong>Ambiance spirituelle :</strong> Imprégnez-vous de la paix des lieux.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Bhaktapur-79kx5k771c9lazu/main/jour6.jpg" class="w-full h-64 object-cover" alt="Jour 6">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🙏 Respect des lieux</p>
+                                <p class="text-gray-700">Dans les stupas, marchez toujours dans le sens des aiguilles d'une montre (circumambulation) et habillez-vous modestement par respect pour la culture locale.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-7" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 7</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Lever de soleil à Nagarkot et randonnée</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Levez-vous tôt pour assister à un lever de soleil spectaculaire sur l'Himalaya depuis Nagarkot, un point de vue réputé. Après ce moment magique, profitez d'une randonnée paisible à travers les collines et les villages pittoresques, redescendant vers Bhaktapur ou ses environs. Une journée en pleine nature, loin de l'agitation.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🌄 <strong>Lever de soleil à Nagarkot :</strong> Admirez les sommets de l'Himalaya s'illuminer.</li><li>🚶‍♀️ <strong>Randonnée panoramique :</strong> Descendez à pied à travers les paysages ruraux.</li><li>🏡 <strong>Découverte locale :</strong> Traversez des villages traditionnels et leurs habitants.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Bhaktapur-79kx5k771c9lazu/main/jour7.jpg" class="w-full h-64 object-cover" alt="Jour 7">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🌡️ Météo</p>
+                                <p class="text-gray-700">Les matins à Nagarkot peuvent être très frais en décembre-janvier. Prévoyez des vêtements chauds pour profiter pleinement du lever de soleil.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-8" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 8</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Bhaktapur : Trésors cachés et architecture</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Aujourd'hui, plongez plus profondément dans les trésors cachés de Bhaktapur. Explorez les ruelles moins fréquentées, découvrez Dattatreya Square et son temple, ainsi que la célèbre Fenêtre du Paon, un chef-d'œuvre de l'artisanat Newar. Laissez-vous surprendre par les détails architecturaux et l'atmosphère authentique.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🚶‍♂️ <strong>Ruelles secrètes :</strong> Perdez-vous dans les passages étroits de la vieille ville.</li><li>🏛️ <strong>Dattatreya Square :</strong> Visitez le temple et le monastère de Pujari Math.</li><li>🪟 <strong>Fenêtre du Paon :</strong> Admirez cette sculpture sur bois emblématique.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Bhaktapur-79kx5k771c9lazu/main/jour8.jpg" class="w-full h-64 object-cover" alt="Jour 8">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">📸 Photographie</p>
+                                <p class="text-gray-700">Les ruelles de Bhaktapur regorgent de scènes de vie quotidienne et de détails architecturaux. Soyez discret et respectueux lorsque vous photographiez les habitants.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-9" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ciel rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 9</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Immersion culturelle : Cuisine ou artisanat</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Immergez-vous dans la culture népalaise de manière interactive. Participez à un cours de cuisine pour apprendre à préparer des plats locaux comme les momos ou le dal bhat. Ou bien, découvrez l'artisanat local en visitant un atelier de thangka, de poterie ou de sculpture sur bois. Une expérience enrichissante et mémorable.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🍜 <strong>Cours de cuisine népalaise :</strong> Apprenez les secrets des saveurs locales.</li><li>🎨 <strong>Atelier d'artisanat :</strong> Observez ou participez à la création d'œuvres d'art.</li><li>🗣️ <strong>Échanges culturels :</strong> Partagez un moment avec les habitants et artisans.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Bhaktapur-79kx5k771c9lazu/main/jour9.jpg" class="w-full h-64 object-cover" alt="Jour 9">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🍽️ Gastronomie</p>
+                                <p class="text-gray-700">Le Dal Bhat est le plat national népalais, un repas complet et nutritif. Les momos (raviolis) sont également incontournables et se déclinent en plusieurs farces.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-10" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 10</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Panauti ou Dhulikhel : Villes historiques</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Partez à la découverte de Panauti, une ancienne ville Newar moins touristique, réputée pour ses temples et son ambiance paisible. Alternativement, visitez Dhulikhel, offrant des vues magnifiques sur l'Himalaya et des opportunités de courtes randonnées. Ces excursions offrent un aperçu authentique de la vie népalaise hors des sentiers battus.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🏘️ <strong>Exploration de Panauti :</strong> Découvrez ses temples anciens et son architecture traditionnelle.</li><li>🏞️ <strong>Vues de Dhulikhel :</strong> Profitez des panoramas sur les montagnes environnantes.</li><li>🚶‍♀️ <strong>Balade paisible :</strong> Imprégnez-vous de la tranquillité de ces villes historiques.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Bhaktapur-79kx5k771c9lazu/main/jour10.jpg" class="w-full h-64 object-cover" alt="Jour 10">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🗺️ Choix de destination</p>
+                                <p class="text-gray-700">Panauti est idéale pour une immersion culturelle tranquille, tandis que Dhulikhel est parfaite pour les vues sur l'Himalaya et les petites randonnées.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-11" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 11</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Journée libre et détente à Bhaktapur</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Après plusieurs jours d'exploration intense, profitez d'une journée plus relaxante à Bhaktapur. C'est l'occasion de revisiter vos endroits préférés, de flâner dans les marchés pour quelques souvenirs, ou simplement de vous asseoir dans un café et d'observer la vie locale. Une journée pour se ressourcer et apprécier l'ambiance.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>☕ <strong>Pause café :</strong> Détendez-vous dans un café avec vue sur Durbar Square.</li><li>🛍️ <strong>Shopping souvenirs :</strong> Trouvez des objets artisanaux uniques à ramener chez vous.</li><li>🚶‍♂️ <strong>Flânerie libre :</strong> Explorez à votre rythme les recoins de la ville.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Bhaktapur-79kx5k771c9lazu/main/jour11.jpg" class="w-full h-64 object-cover" alt="Jour 11">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🎁 Idées cadeaux</p>
+                                <p class="text-gray-700">Pensez aux masques en bois, aux poteries, aux thangkas (peintures bouddhistes) ou aux épices locales comme souvenirs authentiques.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-12" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ciel rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 12</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Siddha Pokhari et marché local</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Aujourd'hui, explorez des sites moins connus de Bhaktapur. Visitez Siddha Pokhari, un grand étang sacré, et observez la vie locale autour de ses berges. Plongez ensuite dans l'effervescence du marché local, où vous pourrez découvrir les produits frais, les épices et l'ambiance colorée du quotidien népalais. Une immersion authentique.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>💧 <strong>Siddha Pokhari :</strong> Découvrez cet étang sacré et son importance locale.</li><li>🥕 <strong>Marché local :</strong> Imprégnez-vous des couleurs et saveurs du marché de Bhaktapur.</li><li>📸 <strong>Photographie :</strong> Capturez des scènes de vie quotidienne et des portraits.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Bhaktapur-79kx5k771c9lazu/main/jour12.jpg" class="w-full h-64 object-cover" alt="Jour 12">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🌶️ Saveurs locales</p>
+                                <p class="text-gray-700">Le marché est l'endroit idéal pour découvrir les fruits, légumes et épices utilisés dans la cuisine népalaise. N'hésitez pas à goûter aux snacks locaux.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-13" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 13</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Derniers instants à Bhaktapur</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Profitez de cette avant-dernière journée pour revisiter les lieux qui vous ont le plus marqué ou pour faire vos derniers achats. C'est le moment idéal pour savourer une dernière fois la cuisine locale, échanger avec les habitants et graver les derniers souvenirs de ce voyage inoubliable. Préparez-vous doucement au départ.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🚶‍♀️ <strong>Revisite :</strong> Retournez à vos temples ou places préférés.</li><li>🎁 <strong>Derniers achats :</strong> Complétez votre collection de souvenirs.</li><li>🍽️ <strong>Dîner d'adieu :</strong> Savourez un dernier repas traditionnel népalais.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Bhaktapur-79kx5k771c9lazu/main/jour13.jpg" class="w-full h-64 object-cover" alt="Jour 13">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🗣️ Communication</p>
+                                <p class="text-gray-700">Apprendre quelques mots de népalais comme 'Namaste' (bonjour/bonsoir) ou 'Dhanyabad' (merci) sera très apprécié par les locaux.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-14" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 14</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Départ de Katmandou</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">C'est le jour du départ. Après un dernier petit-déjeuner à Bhaktapur, un transfert vous conduira à l'aéroport international de Katmandou pour votre vol retour. Emportez avec vous les souvenirs précieux de cette immersion culturelle et spirituelle au cœur du Népal. Namaste et à bientôt !</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>☕ <strong>Dernier petit-déjeuner :</strong> Profitez d'un dernier repas népalais.</li><li>🛄 <strong>Préparation au départ :</strong> Check-out de l'hôtel.</li><li>✈️ <strong>Transfert et vol retour :</strong> Départ de l'aéroport de Katmandou.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Bhaktapur-79kx5k771c9lazu/main/jour14.jpg" class="w-full h-64 object-cover" alt="Jour 14">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🛂 Formalités</p>
+                                <p class="text-gray-700">Assurez-vous d'avoir tous vos documents de voyage (passeport, visa, billets) à portée de main pour un départ en toute sérénité.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+    </section>
+
+    <section id="pratique" class="bg-white border-t border-gray-200 pt-12 pb-12 scroll-mt-24">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-10">
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2 font-bold">
+                    <span>💴</span> Budget
+                </h4>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>Budget vol: </strong>880 € (Aller-retour incluant bagage)</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>Budget transports: </strong>250 €/pers (Estimation taxis locaux, bus interurbains)</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>Budget repas: </strong>310 €/pers (Basé sur 22€/jour)</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>Budget logement: </strong>700 €/pers (Base chambre double 3* ou chambre simple)</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>Budget activités: </strong>170 €/pers (Entrées sites UNESCO, cours de cuisine...)</p>
+                
+            </div>
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2 font-bold">
+                    <span>☀️</span> Périodes Idéales
+                </h4>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">Les périodes idéales sont...</p>
+                
+            </div>
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2 font-bold">
+                    <span>📃</span> Infos pratiques
+                </h4>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">🌤️ Information climat/météo...</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">💳 Information monnaie/paiement...</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">🧑‍🤝‍🧑 Information culture/population...</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">✨ Tips insolites...</p>
+                
+            </div>
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2 font-bold">
+                    <span>🔗</span> Liens Utiles
+                </h4>
+                <ul class="text-sm space-y-3">
+                  <li><a href="https://mytripplanner-dotfr.github.io/Bhaktapur-79kx5k771c9lazu/map.html" target="_blank" class="hover:text-template-ocre transition flex items-center gap-2"><strong>🗺️ Carte Interactive</strong></a></li>
+                    
+                        <li><a href="https://ntb.gov.np/" target="_blank" class="hover:text-template-ocre transition flex items-center gap-2"><strong>🔗 Office du Tourisme du Népal</strong></a></li>
+                    
+                        <li><a href="https://whc.unesco.org/fr/list/121/" target="_blank" class="hover:text-template-ocre transition flex items-center gap-2"><strong>🔗 Patrimoine Mondial UNESCO - Vallée de Katmandou</strong></a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-50 border-t border-slate-200 py-6">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <p class="font-serif text-lg text-template-roche mb-2 font-bold">
+                MyTrip<span class="text-template-ocre">Planner</span>
+            </p>
+
+                <div class="flex justify-center gap-4 text-[10px] md:text-xs text-slate-500 mb-4 font-semibold">
+                    <a href="#" class="hover:text-brand-primary transition hover:underline">Mentions Légales</a>
+                    <a href="#" class="hover:text-brand-primary transition hover:underline">CGU</a>
+                    <a href="#" class="hover:text-brand-primary transition hover:underline">Confidentialité</a>
+                </div>
+
+            <p class="text-[10px] text-gray-400 mb-2">
+                &copy; 2025 MyTripPlanner. Tous droits réservés.
+            </p>
+
+            <div class="flex justify-center">
+                <p class="text-[10px] text-gray-400 uppercase tracking-widest px-2 py-0.5 border border-gray-200 rounded-full inline-block">
+                    🤖 Contenu généré par IA
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Gestion Scroll & Menu
+        const navDesktop = document.getElementById('nav-desktop');
+        const navMobile = document.getElementById('nav-mobile');
+        
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 300) {
+                navDesktop.classList.remove('-translate-y-full');
+                navMobile.classList.remove('-translate-y-full');
+            } else {
+                navDesktop.classList.add('-translate-y-full');
+                navMobile.classList.add('-translate-y-full');
+            }
+        });
+
+        // Active Link Highlighter
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const activeId = entry.target.id;
+                    document.querySelectorAll('.mobile-link').forEach(link => {
+                        const linkHref = link.getAttribute('href').substring(1);
+                        if (linkHref === activeId) {
+                            link.classList.remove('bg-gray-100', 'text-gray-700');
+                            link.classList.add('bg-template-ocre', 'text-white', 'shadow-md');
+                            link.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+                        } else {
+                            link.classList.add('bg-gray-100', 'text-gray-700');
+                            link.classList.remove('bg-template-ocre', 'text-white', 'shadow-md');
+                        }
+                    });
+                }
+            });
+        }, { rootMargin: '-40% 0px -60% 0px' });
+
+        document.querySelectorAll('div[id^="jour-"], section#pratique').forEach(s => observer.observe(s));
+    </script>
+</body>
+</html>
