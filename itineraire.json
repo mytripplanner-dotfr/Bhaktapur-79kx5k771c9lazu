@@ -1,0 +1,363 @@
+{
+  "pays": "Népal",
+  "drapeau": "🇳🇵",
+  "symbole": "🏔️",
+  "titre": "Bhaktapur, Joyau Népalaise : Immersion Culturelle et Spirituelle",
+  "budget_total": "2310 € (Vol + estimations)",
+  "duree": "14 jours",
+  "date_debut": "2025-12-31",
+  "date_fin": "2026-01-14",
+  "temps_vol": "13h40 - 1 escales",
+  "jours": [
+    {
+      "jour": 1,
+      "symbole": "🛬",
+      "titre": "Arrivée à Bhaktapur, première immersion",
+      "legende": "Après un long vol, vous atterrissez à Katmandou. Un transfert vous mènera directement à Bhaktapur, votre havre de paix pour ce séjour. Prenez le temps de vous installer à votre hôtel et de vous imprégner de l'atmosphère unique de cette ville médiévale. Une première balade en soirée vous donnera un aperçu de sa magie.",
+      "lieu": "Bhaktapur",
+      "activites": [
+        "🛬 <strong>Arrivée à Katmandou :</strong> Transfert vers Bhaktapur en taxi ou bus local.",
+        "🛏️ <strong>Installation :</strong> Check-in à l'hôtel et repos bien mérité.",
+        "🚶‍♂️ <strong>Première immersion :</strong> Balade nocturne autour de Durbar Square illuminée."
+      ],
+      "illustration": "jour1.jpg",
+      "encarts": [
+        {
+          "symbole": "ℹ️",
+          "titre": "À savoir",
+          "texte": "Bhaktapur est une ville piétonne dans son centre historique, ce qui rend la découverte à pied très agréable. Prévoyez des chaussures confortables."
+        }
+      ]
+    },
+    {
+      "jour": 2,
+      "symbole": "🏛️",
+      "titre": "Bhaktapur : Cœur historique et artisanat",
+      "legende": "Débutez votre exploration par le cœur historique de Bhaktapur, la place Durbar Square, classée à l'UNESCO. Admirez l'architecture Newar, les temples et les palais. Poursuivez vers Taumadhi Square et la célèbre place de la Poterie, où les artisans travaillent l'argile à ciel ouvert. Une journée riche en découvertes culturelles.",
+      "lieu": "Bhaktapur",
+      "activites": [
+        "🏛️ <strong>Durbar Square :</strong> Explorez les temples et palais de cette place historique.",
+        "🏺 <strong>Place de la Poterie :</strong> Observez les artisans potiers à l'œuvre et leurs créations.",
+        "🙏 <strong>Taumadhi Square :</strong> Admirez le temple de Nyatapola, la plus haute pagode du Népal."
+      ],
+      "illustration": "jour2.jpg",
+      "encarts": [
+        {
+          "symbole": "💡",
+          "titre": "Conseil local",
+          "texte": "Goûtez au 'Juju Dhau', le yaourt royal de Bhaktapur, une spécialité crémeuse servie dans des bols en terre cuite. Un délice rafraîchissant !"
+        }
+      ]
+    },
+    {
+      "jour": 3,
+      "symbole": "🏞️",
+      "titre": "Changu Narayan et vie rurale",
+      "legende": "Aujourd'hui, échappez à l'agitation urbaine pour une immersion dans la campagne népalaise. Visitez le temple de Changu Narayan, le plus ancien temple hindou de la vallée de Katmandou, également classé à l'UNESCO. Profitez d'une agréable promenade à travers les villages traditionnels environnants, découvrant la vie rurale.",
+      "lieu": "Changu Narayan",
+      "activites": [
+        "🕉️ <strong>Temple de Changu Narayan :</strong> Découvrez ce site sacré et son architecture ancienne.",
+        "🚶‍♀️ <strong>Randonnée villageoise :</strong> Promenez-vous dans les villages Newar environnants.",
+        "🏞️ <strong>Vues panoramiques :</strong> Profitez des paysages verdoyants de la vallée."
+      ],
+      "illustration": "jour3.jpg",
+      "encarts": [
+        {
+          "symbole": "🚌",
+          "titre": "Transport",
+          "texte": "Des bus locaux ou des taxis sont disponibles pour se rendre à Changu Narayan depuis Bhaktapur. Le trajet offre déjà de belles vues sur la campagne."
+        }
+      ]
+    },
+    {
+      "jour": 4,
+      "symbole": "🎨",
+      "titre": "Patan, la ville de la beauté",
+      "legende": "Partez pour une excursion d'une journée à Patan, la 'ville de la beauté', réputée pour son art et son artisanat. Sa Durbar Square est un chef-d'œuvre architectural, abritant des temples, des palais et des musées. Ne manquez pas le Temple d'Or et les ruelles animées, témoins d'un riche passé artistique.",
+      "lieu": "Patan",
+      "activites": [
+        "🏛️ <strong>Patan Durbar Square :</strong> Admirez l'incroyable concentration de temples et palais.",
+        "✨ <strong>Temple d'Or (Hiranya Varna Mahavihar) :</strong> Explorez ce monastère bouddhiste scintillant.",
+        "🎨 <strong>Musée de Patan :</strong> Plongez dans l'histoire de l'art sacré népalais."
+      ],
+      "illustration": "jour4.jpg",
+      "encarts": [
+        {
+          "symbole": "🛍️",
+          "titre": "Artisanat",
+          "texte": "Patan est réputée pour ses artisans du métal et du bois. N'hésitez pas à visiter les ateliers pour observer leur travail et trouver des souvenirs uniques."
+        }
+      ]
+    },
+    {
+      "jour": 5,
+      "symbole": " bustling_city",
+      "titre": "Katmandou : Durbar Square et Thamel",
+      "legende": "Direction Katmandou, la capitale trépidante. Commencez par sa Durbar Square, un autre site UNESCO, où l'histoire et la vie quotidienne se rencontrent. Flânez ensuite dans le quartier animé de Thamel, idéal pour le shopping et l'ambiance cosmopolite. Une journée contrastée entre patrimoine et modernité.",
+      "lieu": "Katmandou",
+      "activites": [
+        "🏛️ <strong>Kathmandu Durbar Square :</strong> Visitez l'ancien palais royal et les temples environnants.",
+        "🛍️ <strong>Exploration de Thamel :</strong> Découvrez ce quartier vibrant, ses boutiques et restaurants.",
+        "🚶‍♂️ <strong>Kumari Ghar :</strong> Tentez d'apercevoir la Déesse Vivante Kumari."
+      ],
+      "illustration": "jour5.jpg",
+      "encarts": [
+        {
+          "symbole": "🚦",
+          "titre": "Circulation",
+          "texte": "La circulation à Katmandou peut être dense et bruyante. Prévoyez des temps de trajet plus longs et soyez vigilant en traversant les rues."
+        }
+      ]
+    },
+    {
+      "jour": 6,
+      "symbole": "🧘‍♀️",
+      "titre": "Katmandou : Stupas sacrés",
+      "legende": "Poursuivez votre découverte spirituelle de Katmandou avec deux sites emblématiques. Le stupa de Swayambhunath, le 'Temple des Singes', offre une vue imprenable sur la vallée. Ensuite, visitez Boudhanath, l'un des plus grands stupas bouddhistes du monde, centre de pèlerinage et de méditation. Deux lieux empreints de sérénité.",
+      "lieu": "Katmandou",
+      "activites": [
+        "🐒 <strong>Swayambhunath (Temple des Singes) :</strong> Montez les marches pour une vue panoramique.",
+        "☸️ <strong>Boudhanath Stupa :</strong> Faites le tour du stupa avec les pèlerins et les moines.",
+        "🧘‍♀️ <strong>Ambiance spirituelle :</strong> Imprégnez-vous de la paix des lieux."
+      ],
+      "illustration": "jour6.jpg",
+      "encarts": [
+        {
+          "symbole": "🙏",
+          "titre": "Respect des lieux",
+          "texte": "Dans les stupas, marchez toujours dans le sens des aiguilles d'une montre (circumambulation) et habillez-vous modestement par respect pour la culture locale."
+        }
+      ]
+    },
+    {
+      "jour": 7,
+      "symbole": "🌄",
+      "titre": "Lever de soleil à Nagarkot et randonnée",
+      "legende": "Levez-vous tôt pour assister à un lever de soleil spectaculaire sur l'Himalaya depuis Nagarkot, un point de vue réputé. Après ce moment magique, profitez d'une randonnée paisible à travers les collines et les villages pittoresques, redescendant vers Bhaktapur ou ses environs. Une journée en pleine nature, loin de l'agitation.",
+      "lieu": "Nagarkot",
+      "activites": [
+        "🌄 <strong>Lever de soleil à Nagarkot :</strong> Admirez les sommets de l'Himalaya s'illuminer.",
+        "🚶‍♀️ <strong>Randonnée panoramique :</strong> Descendez à pied à travers les paysages ruraux.",
+        "🏡 <strong>Découverte locale :</strong> Traversez des villages traditionnels et leurs habitants."
+      ],
+      "illustration": "jour7.jpg",
+      "encarts": [
+        {
+          "symbole": "🌡️",
+          "titre": "Météo",
+          "texte": "Les matins à Nagarkot peuvent être très frais en décembre-janvier. Prévoyez des vêtements chauds pour profiter pleinement du lever de soleil."
+        }
+      ]
+    },
+    {
+      "jour": 8,
+      "symbole": "🔍",
+      "titre": "Bhaktapur : Trésors cachés et architecture",
+      "legende": "Aujourd'hui, plongez plus profondément dans les trésors cachés de Bhaktapur. Explorez les ruelles moins fréquentées, découvrez Dattatreya Square et son temple, ainsi que la célèbre Fenêtre du Paon, un chef-d'œuvre de l'artisanat Newar. Laissez-vous surprendre par les détails architecturaux et l'atmosphère authentique.",
+      "lieu": "Bhaktapur",
+      "activites": [
+        "🚶‍♂️ <strong>Ruelles secrètes :</strong> Perdez-vous dans les passages étroits de la vieille ville.",
+        "🏛️ <strong>Dattatreya Square :</strong> Visitez le temple et le monastère de Pujari Math.",
+        "🪟 <strong>Fenêtre du Paon :</strong> Admirez cette sculpture sur bois emblématique."
+      ],
+      "illustration": "jour8.jpg",
+      "encarts": [
+        {
+          "symbole": "📸",
+          "titre": "Photographie",
+          "texte": "Les ruelles de Bhaktapur regorgent de scènes de vie quotidienne et de détails architecturaux. Soyez discret et respectueux lorsque vous photographiez les habitants."
+        }
+      ]
+    },
+    {
+      "jour": 9,
+      "symbole": "🧑‍🍳",
+      "titre": "Immersion culturelle : Cuisine ou artisanat",
+      "legende": "Immergez-vous dans la culture népalaise de manière interactive. Participez à un cours de cuisine pour apprendre à préparer des plats locaux comme les momos ou le dal bhat. Ou bien, découvrez l'artisanat local en visitant un atelier de thangka, de poterie ou de sculpture sur bois. Une expérience enrichissante et mémorable.",
+      "lieu": "Bhaktapur",
+      "activites": [
+        "🍜 <strong>Cours de cuisine népalaise :</strong> Apprenez les secrets des saveurs locales.",
+        "🎨 <strong>Atelier d'artisanat :</strong> Observez ou participez à la création d'œuvres d'art.",
+        "🗣️ <strong>Échanges culturels :</strong> Partagez un moment avec les habitants et artisans."
+      ],
+      "illustration": "jour9.jpg",
+      "encarts": [
+        {
+          "symbole": "🍽️",
+          "titre": "Gastronomie",
+          "texte": "Le Dal Bhat est le plat national népalais, un repas complet et nutritif. Les momos (raviolis) sont également incontournables et se déclinent en plusieurs farces."
+        }
+      ]
+    },
+    {
+      "jour": 10,
+      "symbole": "🏘️",
+      "titre": "Panauti ou Dhulikhel : Villes historiques",
+      "legende": "Partez à la découverte de Panauti, une ancienne ville Newar moins touristique, réputée pour ses temples et son ambiance paisible. Alternativement, visitez Dhulikhel, offrant des vues magnifiques sur l'Himalaya et des opportunités de courtes randonnées. Ces excursions offrent un aperçu authentique de la vie népalaise hors des sentiers battus.",
+      "lieu": "Panauti / Dhulikhel",
+      "activites": [
+        "🏘️ <strong>Exploration de Panauti :</strong> Découvrez ses temples anciens et son architecture traditionnelle.",
+        "🏞️ <strong>Vues de Dhulikhel :</strong> Profitez des panoramas sur les montagnes environnantes.",
+        "🚶‍♀️ <strong>Balade paisible :</strong> Imprégnez-vous de la tranquillité de ces villes historiques."
+      ],
+      "illustration": "jour10.jpg",
+      "encarts": [
+        {
+          "symbole": "🗺️",
+          "titre": "Choix de destination",
+          "texte": "Panauti est idéale pour une immersion culturelle tranquille, tandis que Dhulikhel est parfaite pour les vues sur l'Himalaya et les petites randonnées."
+        }
+      ]
+    },
+    {
+      "jour": 11,
+      "symbole": "☕",
+      "titre": "Journée libre et détente à Bhaktapur",
+      "legende": "Après plusieurs jours d'exploration intense, profitez d'une journée plus relaxante à Bhaktapur. C'est l'occasion de revisiter vos endroits préférés, de flâner dans les marchés pour quelques souvenirs, ou simplement de vous asseoir dans un café et d'observer la vie locale. Une journée pour se ressourcer et apprécier l'ambiance.",
+      "lieu": "Bhaktapur",
+      "activites": [
+        "☕ <strong>Pause café :</strong> Détendez-vous dans un café avec vue sur Durbar Square.",
+        "🛍️ <strong>Shopping souvenirs :</strong> Trouvez des objets artisanaux uniques à ramener chez vous.",
+        "🚶‍♂️ <strong>Flânerie libre :</strong> Explorez à votre rythme les recoins de la ville."
+      ],
+      "illustration": "jour11.jpg",
+      "encarts": [
+        {
+          "symbole": "🎁",
+          "titre": "Idées cadeaux",
+          "texte": "Pensez aux masques en bois, aux poteries, aux thangkas (peintures bouddhistes) ou aux épices locales comme souvenirs authentiques."
+        }
+      ]
+    },
+    {
+      "jour": 12,
+      "symbole": "💧",
+      "titre": "Siddha Pokhari et marché local",
+      "legende": "Aujourd'hui, explorez des sites moins connus de Bhaktapur. Visitez Siddha Pokhari, un grand étang sacré, et observez la vie locale autour de ses berges. Plongez ensuite dans l'effervescence du marché local, où vous pourrez découvrir les produits frais, les épices et l'ambiance colorée du quotidien népalais. Une immersion authentique.",
+      "lieu": "Bhaktapur",
+      "activites": [
+        "💧 <strong>Siddha Pokhari :</strong> Découvrez cet étang sacré et son importance locale.",
+        "🥕 <strong>Marché local :</strong> Imprégnez-vous des couleurs et saveurs du marché de Bhaktapur.",
+        "📸 <strong>Photographie :</strong> Capturez des scènes de vie quotidienne et des portraits."
+      ],
+      "illustration": "jour12.jpg",
+      "encarts": [
+        {
+          "symbole": "🌶️",
+          "titre": "Saveurs locales",
+          "texte": "Le marché est l'endroit idéal pour découvrir les fruits, légumes et épices utilisés dans la cuisine népalaise. N'hésitez pas à goûter aux snacks locaux."
+        }
+      ]
+    },
+    {
+      "jour": 13,
+      "symbole": "👋",
+      "titre": "Derniers instants à Bhaktapur",
+      "legende": "Profitez de cette avant-dernière journée pour revisiter les lieux qui vous ont le plus marqué ou pour faire vos derniers achats. C'est le moment idéal pour savourer une dernière fois la cuisine locale, échanger avec les habitants et graver les derniers souvenirs de ce voyage inoubliable. Préparez-vous doucement au départ.",
+      "lieu": "Bhaktapur",
+      "activites": [
+        "🚶‍♀️ <strong>Revisite :</strong> Retournez à vos temples ou places préférés.",
+        "🎁 <strong>Derniers achats :</strong> Complétez votre collection de souvenirs.",
+        "🍽️ <strong>Dîner d'adieu :</strong> Savourez un dernier repas traditionnel népalais."
+      ],
+      "illustration": "jour13.jpg",
+      "encarts": [
+        {
+          "symbole": "🗣️",
+          "titre": "Communication",
+          "texte": "Apprendre quelques mots de népalais comme 'Namaste' (bonjour/bonsoir) ou 'Dhanyabad' (merci) sera très apprécié par les locaux."
+        }
+      ]
+    },
+    {
+      "jour": 14,
+      "symbole": "✈️",
+      "titre": "Départ de Katmandou",
+      "legende": "C'est le jour du départ. Après un dernier petit-déjeuner à Bhaktapur, un transfert vous conduira à l'aéroport international de Katmandou pour votre vol retour. Emportez avec vous les souvenirs précieux de cette immersion culturelle et spirituelle au cœur du Népal. Namaste et à bientôt !",
+      "lieu": "Katmandou",
+      "activites": [
+        "☕ <strong>Dernier petit-déjeuner :</strong> Profitez d'un dernier repas népalais.",
+        "🛄 <strong>Préparation au départ :</strong> Check-out de l'hôtel.",
+        "✈️ <strong>Transfert et vol retour :</strong> Départ de l'aéroport de Katmandou."
+      ],
+      "illustration": "jour14.jpg",
+      "encarts": [
+        {
+          "symbole": "🛂",
+          "titre": "Formalités",
+          "texte": "Assurez-vous d'avoir tous vos documents de voyage (passeport, visa, billets) à portée de main pour un départ en toute sérénité."
+        }
+      ]
+    }
+  ],
+  "detail_budget": [
+    {
+      "titre": "Budget vol:",
+      "legende": "880 € (Aller-retour incluant bagage)",
+      "symbole": "🛬"
+    },
+    {
+      "titre": "Budget transports:",
+      "legende": "250 €/pers (Estimation taxis locaux, bus interurbains)",
+      "symbole": "🚆"
+    },
+    {
+      "titre": "Budget repas:",
+      "legende": "310 €/pers (Basé sur 22€/jour)",
+      "symbole": "🥗"
+    },
+    {
+      "titre": "Budget logement:",
+      "legende": "700 €/pers (Base chambre double 3* ou chambre simple)",
+      "symbole": "🛏️"
+    },
+    {
+      "titre": "Budget activités:",
+      "legende": "170 €/pers (Entrées sites UNESCO, cours de cuisine...)",
+      "symbole": "🎭"
+    }
+  ],
+  "periodes_ideales": [
+    {
+      "titre": "Les périodes idéales sont...",
+      "symbole": "📅",
+      "texte": "Les périodes idéales pour visiter Bhaktapur sont d'octobre à novembre et de mars à avril, lorsque le temps est sec et les températures agréables. Décembre-Janvier est la saison sèche et fraîche, idéale pour les vues sur l'Himalaya."
+    }
+  ],
+  "infos_pratiques": [
+    {
+      "titre": "Information climat/météo...",
+      "symbole": "🌤️",
+      "texte": "Le Népal en décembre-janvier offre un temps sec et ensoleillé, avec des journées douces et des nuits fraîches. Les températures moyennes à Bhaktapur varient de 5°C à 18°C. C'est la meilleure période pour admirer les sommets himalayens dégagés."
+    },
+    {
+      "titre": "Information monnaie/paiement...",
+      "symbole": "💳",
+      "texte": "La monnaie est la Roupie Népalaise (NPR). Les cartes de crédit sont acceptées dans les grands hôtels et restaurants, mais l'argent liquide est essentiel pour les petits commerces et les marchés locaux. Prévoyez toujours de la petite monnaie."
+    },
+    {
+      "titre": "Information culture/population...",
+      "symbole": "🧑‍🤝‍🧑",
+      "texte": "La culture Newar est très présente à Bhaktapur, avec ses traditions artistiques, architecturales et culinaires uniques. Le respect des coutumes locales, comme retirer ses chaussures avant d'entrer dans un temple, est primordial. La salutation 'Namaste' est courante."
+    },
+    {
+      "titre": "Tips insolites...",
+      "symbole": "✨",
+      "texte": "À Bhaktapur, observez les artisans potiers travailler leurs créations sur la place de la Poterie. Ne manquez pas de goûter au 'Juju Dhau', le yaourt royal, une spécialité locale servie dans des bols en terre cuite."
+    }
+  ],
+  "liens_utiles": [
+    {
+      "legende": "Site officiel du tourisme au Népal",
+      "titre": "Office du Tourisme du Népal",
+      "url": "https://ntb.gov.np/",
+      "symbole": "🔗"
+    },
+    {
+      "legende": "Page UNESCO sur la vallée de Katmandou",
+      "titre": "Patrimoine Mondial UNESCO - Vallée de Katmandou",
+      "url": "https://whc.unesco.org/fr/list/121/",
+      "symbole": "🔗"
+    }
+  ]
+}
